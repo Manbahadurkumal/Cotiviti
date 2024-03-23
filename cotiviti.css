@@ -107,6 +107,7 @@ section h2{
     background-color: transparent;
     display: inline-block;
     border-radius: 3px;
+    margin: 2px;
 }
 .btn:hover{
     background-color: #ec008c;
@@ -176,12 +177,10 @@ section h2{
     margin-top: 20px;
     margin-bottom: 30px;
 }
-#graphics{
-    display: inline-block;
-}
-.ini{
-    display: inline-block;
-    width: 50%;
+
+.Initiatives{
+    display: flex;
+    justify-content: space-around;
 }
 .ini a{
     border-color: #10069f;
@@ -247,7 +246,6 @@ footer{
 #information{
     float: right;
     margin-right: 55px;
-
 }
 #lofo{
     float:right;
@@ -265,5 +263,31 @@ footer{
     #bar{
         /* color: #ec008c; */
         display: block;
+    }
+    .logo{
+        width: 150px;
+    }
+    header{
+        padding: none;
+    }
+    #graphics{
+        display: none;
+    }
+    #list li{
+        list-style-type: none;
+        border-bottom: 1px solid #ebebeb;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #whoweare{
+        background-image: none;
+    }
+    #whoweare p{
+        width: 80%;
+    }
+}
+@media only screen and (min-width:600px){
+    .logo{
+        width: 220px;
     }
 }
